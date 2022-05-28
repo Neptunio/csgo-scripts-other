@@ -1,3 +1,4 @@
 Latest Update: May 28, 2022
 Update Log:
 [-] Updated UI elements
+[-] Added custom notify
