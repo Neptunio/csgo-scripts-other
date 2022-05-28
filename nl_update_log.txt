@@ -1,4 +1,3 @@
 Latest Update: May 28, 2022
-[*] NEPTUNIO.LUA 1.0 ALPHA ACCESS
 Update Log:
 [-] Updated UI elements
