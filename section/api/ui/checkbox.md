@@ -14,7 +14,7 @@ Value is `false` as default
 
 ### get
 
-`:get()`: boolean
+`:get()`<mark style="color:blue;">**: boolean**</mark>
 
 <pre class="language-lua"><code class="lang-lua">local checkbox = ui.create_checkbox("Checkbox", "checkbox_ref")
 <strong>print(checkbox:get()) -- false
@@ -22,7 +22,7 @@ Value is `false` as default
 
 ### set
 
-`:set()`: boolean
+`:set(value: boolean)`<mark style="color:blue;">**: boolean**</mark>
 
 <pre class="language-lua"><code class="lang-lua">local checkbox = ui.create_checkbox("Checkbox", "checkbox_ref")
 <strong>checkbox:set(true)
@@ -47,7 +47,7 @@ Value is `false` as default
 
 ### disable
 
-`:disable(state: boolean)`: boolean
+`:disable(state: boolean)`<mark style="color:blue;">**: boolean**</mark>
 
 <pre class="language-lua"><code class="lang-lua">local checkbox = ui.create_checkbox("Checkbox", "checkbox_ref")
 <strong>checkbox:disable(true)
