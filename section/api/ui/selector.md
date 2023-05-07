@@ -14,7 +14,7 @@ Value is<mark style="color:purple;">`1`</mark>or<mark style="color:purple;">`Ite
 
 ### get
 
-`:get()` <mark style="color:purple;">`:number`</mark> or <mark style="color:purple;">`string`</mark>
+`:get()` <mark style="color:purple;">`:number`</mark>
 
 ```lua
 local selector = ui.create_selector("Selector", "selector_ref", {"Item1", "Item2"})

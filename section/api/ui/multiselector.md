@@ -23,11 +23,11 @@ print(selector:get()) -- Item1
 
 ### set
 
-`:set(value: string)` <mark style="color:purple;">`:boolean`</mark>
+`:set(value: table)` <mark style="color:purple;">`:boolean`</mark>
 
 ```lua
 local multiselector = ui.create_multiselector("MultiSelector", "multiselector_ref", {"Item1", "Item2"})
-selector:set("Item2")
+selector:set({"Item", nil})
 ```
 
 {% tabs %}

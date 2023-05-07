@@ -20,7 +20,7 @@ Default value is<mark style="color:purple;">`0`</mark>
 
 ### get
 
-`:get()` <mark style="color:purple;">`:string`</mark>
+`:get()` <mark style="color:purple;">`:number`</mark>
 
 ```lua
 local slider = ui.create_slider("Slider", "slider_ref")
@@ -47,7 +47,7 @@ print(slider:max()) -- 1
 
 ### set
 
-`:set(value: table)` <mark style="color:purple;">`:boolean`</mark>
+`:set(value: number, min: number, max: number)` <mark style="color:purple;">`:boolean`</mark>
 
 ```lua
 local slider = ui.create_slider("Slider", "slider_ref")

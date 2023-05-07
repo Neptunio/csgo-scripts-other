@@ -2,7 +2,7 @@
 
 ### ui.get
 
-`ui.get(item: string)`<mark style="color:purple;">`: menu_item`</mark>
+`ui.get(item: string)` <mark style="color:purple;">`:menu_item`</mark>
 
 {% hint style="info" %}
 Returns menu\_item (not value)
@@ -10,7 +10,7 @@ Returns menu\_item (not value)
 
 ### ui.set
 
-`ui.set(item: string, value: any)`<mark style="color:purple;">`: bool`</mark>
+`ui.set(item: string, value: any)` <mark style="color:purple;">`:boolean`</mark>
 
 {% hint style="info" %}
 Returns boolean on set
@@ -18,7 +18,7 @@ Returns boolean on set
 
 ### ui.create
 
-`ui.create(item: number, name: string, reference: string, value: any)`: menu\_item
+`ui.create(item: number, name: string, reference: string, value: any)`` `<mark style="color:purple;">`:menu_item`</mark>
 
 <table data-view="cards"><thead><tr><th>item</th><th data-type="number">number</th><th>value</th></tr></thead><tbody><tr><td>group</td><td>0</td><td>any</td></tr><tr><td>checkbox</td><td>1</td><td>boolean</td></tr><tr><td>colorpicker</td><td>2</td><td>table</td></tr><tr><td>slider</td><td>3</td><td>min, max, default <code>number</code></td></tr><tr><td>selector</td><td>4</td><td>items <code>table</code>, selected default <code>number</code></td></tr><tr><td>multiselector</td><td>5</td><td>items <code>table</code>, selected items <code>table</code></td></tr></tbody></table>
 
@@ -51,7 +51,7 @@ Returns menu\_item on create
 
 ### ui.add\_color
 
-`ui.add_color(item: string, color: table)`<mark style="color:purple;">`: menu_item`</mark>
+`ui.add_color(item: string, color: table)` <mark style="color:purple;">`:menu_item`</mark>
 
 <pre class="language-lua"><code class="lang-lua">local item, bool = ui.create(1, "Name", "reference", true)
 <strong>local col = ui.add_color(item, Color(255, 255, 255))
@@ -63,7 +63,7 @@ print(ui.get("reference")) -- checkbox, colorpicker value
 
 ### ui.attach
 
-`ui.attach(item: menu_item, attach_item: menu_item)`<mark style="color:purple;">`: bool`</mark>
+`ui.attach(item: menu_item, attach_item: menu_item)` <mark style="color:purple;">`:boolean`</mark>
 
 <pre class="language-lua"><code class="lang-lua">local group = ui.create(0, "Window", "window_reference")
 <strong>local checkbox = ui.create(1, "Checkbox", "checkbox_ref")
@@ -72,7 +72,7 @@ print(ui.get("reference")) -- checkbox, colorpicker value
 
 ### ui.disable
 
-`ui.disable(item: menu_item, state: boolean)`<mark style="color:purple;">`:menu_item`</mark>
+`ui.disable(item: menu_item, state: boolean)` <mark style="color:purple;">`:menu_item`</mark>
 
 <pre class="language-lua"><code class="lang-lua">local item, bool = ui.create(1, "Name", "reference", true)
 <strong>local col = ui.add_color(item, Color(255, 255, 255))
