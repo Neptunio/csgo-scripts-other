@@ -9,7 +9,4 @@
     * [checkbox](section/api/ui/checkbox.md)
     * [colorpicker](section/api/ui/colorpicker.md)
     * [slider](section/api/ui/slider.md)
-
-***
-
-* [Page 1](page-1.md)
+    * [selector](section/api/ui/selector.md)

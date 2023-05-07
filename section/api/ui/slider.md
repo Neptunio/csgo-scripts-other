@@ -9,16 +9,22 @@ local slider = ui.create_slider("Slider", "slider_ref")
 ```
 
 {% hint style="info" %}
-Min is 0, max is 1, default is 0 as default
+### Defaults
+
+Min is<mark style="color:purple;">`0`</mark>
+
+Max is<mark style="color:purple;">`1`</mark>
+
+Default value is<mark style="color:purple;">`0`</mark>
 {% endhint %}
 
 ### get
 
-`:get()` <mark style="color:purple;">`:number`</mark>
+`:get()` <mark style="color:purple;">`:string`</mark>
 
 ```lua
 local slider = ui.create_slider("Slider", "slider_ref")
-print(colorpicker:get()) -- 0
+print(slider:get()) -- 0
 ```
 
 ### min
