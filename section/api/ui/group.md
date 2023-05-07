@@ -1,4 +1,4 @@
-# 🕍 group
+# group
 
 ### ui.create\_group
 

@@ -1,4 +1,4 @@
-# 🎨 colorpicker
+# colorpicker
 
 ## create
 
@@ -47,7 +47,7 @@ print(set_bool) -- true
 
 ### disable
 
-`:set(value: table)` <mark style="color:purple;">`:boolean`</mark>
+`:disable(state: boolean)` <mark style="color:purple;">`:boolean`</mark>
 
 ```lua
 local colorpicker = ui.create_colorpicker("Checkbox", "checkbox_ref")
