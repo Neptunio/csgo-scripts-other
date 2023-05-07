@@ -10,3 +10,4 @@
     * [colorpicker](section/api/ui/colorpicker.md)
     * [slider](section/api/ui/slider.md)
     * [selector](section/api/ui/selector.md)
+    * [multiselector](section/api/ui/multiselector.md)
