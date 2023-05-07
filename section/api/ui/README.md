@@ -78,10 +78,25 @@ print(ui.get("reference")) -- checkbox, colorpicker value
 
 `ui.disable(item: menu_item, state: boolean)` <mark style="color:purple;">`:menu_item`</mark>
 
-<pre class="language-lua"><code class="lang-lua">local item, bool = ui.create(1, "Name", "reference", true)
-<strong>local col = ui.add_color(item, Color(255, 255, 255))
-</strong>
-print(item:get()) -- checkbox value
-print(col:get()) -- colorpicker value
-print(ui.get("reference")) -- checkbox, colorpicker value
-</code></pre>
+```lua
+local group = ui.create(0, "Window", "window_reference")
+group:disable(true)
+```
+
+{% tabs %}
+{% tab title="Variation 1" %}
+```lua
+local group = ui.create(0, "Window", "window_reference")
+local disable_bool = group:disable(true)
+print(disable_bool) -- true
+```
+{% endtab %}
+
+{% tab title="Variation 2" %}
+```lua
+local group = ui.create(0, "Window", "window_reference")
+local disable_bool = group:disable(false)
+print(disable_bool) -- false
+```
+{% endtab %}
+{% endtabs %}
