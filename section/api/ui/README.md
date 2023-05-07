@@ -2,7 +2,7 @@
 
 ### ui.get
 
-`ui.get(item: string)`: menu\_item
+`ui.get(item: string)`<mark style="color:purple;">`: menu_item`</mark>
 
 {% hint style="info" %}
 Returns menu\_item (not value)
@@ -10,7 +10,7 @@ Returns menu\_item (not value)
 
 ### ui.set
 
-`ui.set(item: string, value: any)`: bool
+`ui.set(item: string, value: any)`<mark style="color:purple;">`: bool`</mark>
 
 {% hint style="info" %}
 Returns boolean on set
@@ -31,12 +31,19 @@ local selector = ui.create(4, "Selector", "selector_ref", {"Item1", "Item2"}, 2)
 local multiselector = ui.create(5, "MultiSelector", "multiselector_ref", {"Item1", "Item2"}, {false, true})
 ```
 
-MultiSelector Variations
-
+{% tabs %}
+{% tab title="Multiselector Variation 1" %}
 ```lua
-local multiselector_one = ui.create(5, "MultiSelector1", "multiselector1_ref", {"Item1", "Item2"}, {true, false}), {false, true})
-local multiselector_two = ui.create(5, "MultiSelector2", "multiselector2_ref", {"Item1", "Item2"})
+local multiselector = ui.create(5, "MultiSelector", "multiselector_ref", {"Item1", "Item2"}, {true, false})
 ```
+{% endtab %}
+
+{% tab title="Multiselector Variation 2" %}
+```lua
+local multiselector = ui.create(5, "MultiSelector", "multiselector_ref", {"Item1", "Item2"}, {nil, "Item2"})
+```
+{% endtab %}
+{% endtabs %}
 
 {% hint style="info" %}
 Returns menu\_item on create
@@ -44,7 +51,7 @@ Returns menu\_item on create
 
 ### ui.add\_color
 
-`ui.add_color(item: string, color: table)`: menu\_item
+`ui.add_color(item: string, color: table)`<mark style="color:purple;">`: menu_item`</mark>
 
 <pre class="language-lua"><code class="lang-lua">local item, bool = ui.create(1, "Name", "reference", true)
 <strong>local col = ui.add_color(item, Color(255, 255, 255))
@@ -56,9 +63,21 @@ print(ui.get("reference")) -- checkbox, colorpicker value
 
 ### ui.attach
 
-`ui.attach(item: menu_item, attach_item: menu_item)`: bool
+`ui.attach(item: menu_item, attach_item: menu_item)`<mark style="color:purple;">`: bool`</mark>
 
 <pre class="language-lua"><code class="lang-lua">local group = ui.create(0, "Window", "window_reference")
 <strong>local checkbox = ui.create(1, "Checkbox", "checkbox_ref")
 </strong>ui.attach(group, checkbox)
+</code></pre>
+
+### ui.disable
+
+`ui.disable(item: menu_item, state: boolean)`<mark style="color:purple;">`:menu_item`</mark>
+
+<pre class="language-lua"><code class="lang-lua">local item, bool = ui.create(1, "Name", "reference", true)
+<strong>local col = ui.add_color(item, Color(255, 255, 255))
+</strong>
+print(item:get()) -- checkbox value
+print(col:get()) -- colorpicker value
+print(ui.get("reference")) -- checkbox, colorpicker value
 </code></pre>
