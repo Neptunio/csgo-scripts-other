@@ -2,7 +2,7 @@
 
 ### create
 
-`ui.create_checkbox(name: string, reference: string, value: boolean)`
+`ui.create_checkbox(name: string, reference: string, value: boolean)` <mark style="color:purple;">`:menu_item`</mark>
 
 ```lua
 local checkbox = ui.create_checkbox("Checkbox", "checkbox_ref")
@@ -14,7 +14,7 @@ Value is `false` as default
 
 ### get
 
-`:get()`<mark style="color:purple;">`:boolean`</mark>
+`:get()` <mark style="color:purple;">`:boolean`</mark>
 
 <pre class="language-lua"><code class="lang-lua">local checkbox = ui.create_checkbox("Checkbox", "checkbox_ref")
 <strong>print(checkbox:get()) -- false
@@ -47,7 +47,7 @@ Value is `false` as default
 
 ### disable
 
-`:disable(state: boolean)` <mark style="color:blue;">**: boolean**</mark>
+`:disable(state: boolean)` <mark style="color:purple;">`:boolean`</mark>
 
 <pre class="language-lua"><code class="lang-lua">local checkbox = ui.create_checkbox("Checkbox", "checkbox_ref")
 <strong>checkbox:disable(true)
