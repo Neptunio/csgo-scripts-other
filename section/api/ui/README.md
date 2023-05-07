@@ -4,17 +4,21 @@
 
 `ui.get(item: string)` <mark style="color:purple;">`:menu_item`</mark>
 
-{% hint style="info" %}
-Returns menu\_item (not value)
-{% endhint %}
+```lua
+local item = ui.create(1, "Checkbox", "checkbox_ref", true)
+local get = ui.get("checkbox_ref")
+print(get) -- true
+```
 
 ### ui.set
 
 `ui.set(item: string, value: any)` <mark style="color:purple;">`:boolean`</mark>
 
-{% hint style="info" %}
-Returns boolean on set
-{% endhint %}
+```lua
+local item = ui.create(1, "Checkbox", "checkbox_ref")
+item:set(true)
+print(item:get()) -- true
+```
 
 ### ui.create
 
