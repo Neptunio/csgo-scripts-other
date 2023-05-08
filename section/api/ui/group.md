@@ -4,10 +4,9 @@
 
 `ui.create_group(name: string, reference: string)` <mark style="color:purple;">`:menu_item`</mark>
 
-```lua
-local group = ui.create_group("Window", "window_ref")
-print(group:get()) -- nil
-```
+<pre class="language-lua"><code class="lang-lua"><strong>local group = ui.create_group("Window", "window_ref")
+</strong>print(group:get()) -- nil
+</code></pre>
 
 ### attach
 
@@ -20,17 +19,16 @@ local checkbox = ui.create_checkbox("Checkbox", "checkbox_ref")
 
 {% tabs %}
 {% tab title="Variation 1" %}
-```lua
-local group_one = ui.create_group("Window1", "window1_ref")
+<pre class="language-lua"><code class="lang-lua">local group_one = ui.create_group("Window1", "window1_ref")
 local group_two = ui.create_group("Window2", "window2_ref")
 local checkbox = ui.create_checkbox("Checkbox", "checkbox_ref")
 
-local attach_one = group_one:attach(checkbox)
-local attach_two = group_two:attach(checkbox)
-
+<strong>local attach_one = group_one:attach(checkbox)
+</strong><strong>local attach_two = group_two:attach(checkbox)
+</strong>
 print(attach_one) -- false
 print(attach_two) -- true
-```
+</code></pre>
 {% endtab %}
 {% endtabs %}
 
@@ -38,25 +36,22 @@ print(attach_two) -- true
 
 `:disable(item: menu_item, state: boolean)` <mark style="color:purple;">`:boolean`</mark>
 
-```lua
-local group = ui.create_group("Window", "window_ref")
-group:disable(true)
-```
+<pre class="language-lua"><code class="lang-lua">local group = ui.create_group("Window", "window_ref")
+<strong>group:disable(true)
+</strong></code></pre>
 
 {% tabs %}
 {% tab title="Variation 1" %}
-```lua
-local group = ui.create_group("Window", "window_ref")
-local disable_bool = group:disable(true)
-print(disable_bool) -- true
-```
+<pre class="language-lua"><code class="lang-lua">local group = ui.create_group("Window", "window_ref")
+<strong>local disable_bool = group:disable(true)
+</strong>print(disable_bool) -- true
+</code></pre>
 {% endtab %}
 
 {% tab title="Variation 2" %}
-```lua
-local group = ui.create_group("Window", "window_ref")
-local disable_bool = group:disable(false)
-print(disable_bool) -- false
-```
+<pre class="language-lua"><code class="lang-lua">local group = ui.create_group("Window", "window_ref")
+<strong>local disable_bool = group:disable(false)
+</strong>print(disable_bool) -- false
+</code></pre>
 {% endtab %}
 {% endtabs %}

@@ -9,51 +9,46 @@ local selector = ui.create_selector("Selector", "selector_ref", {"Item1", "Item2
 ```
 
 {% hint style="info" %}
-Value is<mark style="color:purple;">`1`</mark>or<mark style="color:purple;">`Item1`</mark>as default
+Value is<mark style="color:purple;">**`1`**</mark>or<mark style="color:purple;">**`Item1`**</mark>as default
 {% endhint %}
 
 ### get
 
 `:get()` <mark style="color:purple;">`:number`</mark>
 
-```lua
-local selector = ui.create_selector("Selector", "selector_ref", {"Item1", "Item2"})
-print(selector:get()) -- Item1
-```
+<pre class="language-lua"><code class="lang-lua">local selector = ui.create_selector("Selector", "selector_ref", {"Item1", "Item2"})
+<strong>print(selector:get()) -- Item1
+</strong></code></pre>
 
 ### get\_num
 
 `:get_num()` <mark style="color:purple;">`:number`</mark>
 
-```lua
-local selector = ui.create_selector("Selector", "selector_ref", {"Item1", "Item2"})
-print(selector:get_num()) -- 1
-```
+<pre class="language-lua"><code class="lang-lua">local selector = ui.create_selector("Selector", "selector_ref", {"Item1", "Item2"})
+<strong>print(selector:get_num()) -- 1
+</strong></code></pre>
 
 ### set
 
 `:set(value: string` or `number)` <mark style="color:purple;">`:boolean`</mark>
 
-```lua
-local selector = ui.create_selector("Selector", "selector_ref", {"Item1", "Item2"})
-selector:set("Item2")
-```
+<pre class="language-lua"><code class="lang-lua">local selector = ui.create_selector("Selector", "selector_ref", {"Item1", "Item2"})
+<strong>selector:set("Item2")
+</strong></code></pre>
 
 {% tabs %}
 {% tab title="Variation 1" %}
-```lua
-local selector = ui.create_selector("Selector", "selector_ref", {"Item1", "Item2"})
-local set_bool = selector:set("Item2")
-print(set_bool) -- true
-```
+<pre class="language-lua"><code class="lang-lua">local selector = ui.create_selector("Selector", "selector_ref", {"Item1", "Item2"})
+<strong>local set_bool = selector:set("Item2")
+</strong>print(set_bool) -- true
+</code></pre>
 {% endtab %}
 
 {% tab title="Variation 2" %}
-```lua
-local selector = ui.create_selector("Selector", "selector_ref", {"Item1", "Item2"}, "Item2")
-local set_bool = selector:set(1)
-print(set_bool) -- true
-```
+<pre class="language-lua"><code class="lang-lua">local selector = ui.create_selector("Selector", "selector_ref", {"Item1", "Item2"}, "Item2")
+<strong>local set_bool = selector:set(1)
+</strong>print(set_bool) -- true
+</code></pre>
 {% endtab %}
 {% endtabs %}
 
@@ -61,25 +56,22 @@ print(set_bool) -- true
 
 `:disable(state: boolean)` <mark style="color:purple;">`:boolean`</mark>
 
-```lua
-local selector = ui.create_selector("Selector", "selector_ref", {"Item1", "Item2"}, 2)
-slider:disable(true)
-```
+<pre class="language-lua"><code class="lang-lua">local selector = ui.create_selector("Selector", "selector_ref", {"Item1", "Item2"}, 2)
+<strong>slider:disable(true)
+</strong></code></pre>
 
 {% tabs %}
 {% tab title="Variation 1" %}
-```lua
-local selector = ui.create_selector("Selector", "selector_ref", {"Item1", "Item2"}, 2)
-local set_bool = selector:disable(true)
-print(set_bool) -- true
-```
+<pre class="language-lua"><code class="lang-lua">local selector = ui.create_selector("Selector", "selector_ref", {"Item1", "Item2"}, 2)
+<strong>local set_bool = selector:disable(true)
+</strong>print(set_bool) -- true
+</code></pre>
 {% endtab %}
 
 {% tab title="Variation 2" %}
-```lua
-local selector = ui.create_selector("Selector", "selector_ref", {"Item1", "Item2"}, 2)
-local set_bool = selector:disable(false)
-print(set_bool) -- false
-```
+<pre class="language-lua"><code class="lang-lua">local selector = ui.create_selector("Selector", "selector_ref", {"Item1", "Item2"}, 2)
+<strong>local set_bool = selector:disable(false)
+</strong>print(set_bool) -- false
+</code></pre>
 {% endtab %}
 {% endtabs %}

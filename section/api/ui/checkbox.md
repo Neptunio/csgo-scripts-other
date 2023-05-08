@@ -9,7 +9,7 @@ local checkbox = ui.create_checkbox("Checkbox", "checkbox_ref")
 ```
 
 {% hint style="info" %}
-Value is `false` as default
+Default value is <mark style="color:purple;">**`false`**</mark>
 {% endhint %}
 
 ### get

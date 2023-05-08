@@ -4,6 +4,10 @@
 
 `ui.create_colorpicker(name: string, reference: string, value: table)` <mark style="color:purple;">`:menu_item`</mark>
 
+{% hint style="info" %}
+Default value is <mark style="color:purple;">**`Color(255, 255, 255)`**</mark>
+{% endhint %}
+
 ```lua
 local colorpicker = ui.create_colorpicker("Colorpicker", "colorpicker_ref")
 ```
@@ -12,36 +16,36 @@ local colorpicker = ui.create_colorpicker("Colorpicker", "colorpicker_ref")
 
 `:get()` <mark style="color:purple;">`:table`</mark>
 
-```lua
-local colorpicker = ui.create_colorpicker("Colorpicker", "colorpicker_ref")
-print(colorpicker:get()) -- Color(255, 255, 255)
-```
+<pre class="language-lua"><code class="lang-lua">local colorpicker = ui.create_colorpicker("Colorpicker", "colorpicker_ref")
+<strong>print(colorpicker:get()) -- Color(255, 255, 255)
+</strong></code></pre>
 
 ### set
 
 `:set(value: table)` <mark style="color:purple;">`:boolean`</mark>
 
-```lua
-local colorpicker = ui.create_colorpicker("Checkbox", "checkbox_ref")
-colorpicker:set(Color(255, 0, 255))
-print(colorpicker:get()) -- Color(255, 0, 255)
-```
+<pre class="language-lua"><code class="lang-lua">local colorpicker = ui.create_colorpicker("Checkbox", "checkbox_ref")
+<strong>colorpicker:set(Color(255, 0, 255))
+</strong>print(colorpicker:get()) -- Color(255, 0, 255)
+</code></pre>
 
 {% tabs %}
 {% tab title="Variation 1" %}
-```lua
-local colorpicker = ui.create_colorpicker("Checkbox", "checkbox_ref", Color(0, 255, 0))
-local set_bool = colorpicker:set(Color(255, 255, 0))
-print(set_bool) -- true
-```
+<pre class="language-lua"><code class="lang-lua">local colorpicker = ui.create_colorpicker("Checkbox", "checkbox_ref", Color(0, 255, 0))
+
+<strong>local set_bool_one = colorpicker:set(Color(255, 255, 0))
+</strong><strong>local set_bool_two = colorpicker:set(Color(45, 255, 50))
+</strong>
+print(set_bool_one) -- false
+print(set_bool_two) -- true
+</code></pre>
 {% endtab %}
 
 {% tab title="Variation 2" %}
-```lua
-local checkbox = ui.create_colorpicker("Checkbox", "checkbox_ref")
-local set_bool = checkbox:set(Color(255, 0, 0))
-print(set_bool) -- true
-```
+<pre class="language-lua"><code class="lang-lua">local colorpicker = ui.create_colorpicker("Checkbox", "checkbox_ref", Color(0, 255, 0))
+<strong>local set_bool = checkbox:set(Color(255, 0, 0))
+</strong>print(set_bool) -- true
+</code></pre>
 {% endtab %}
 {% endtabs %}
 
@@ -49,25 +53,26 @@ print(set_bool) -- true
 
 `:disable(state: boolean)` <mark style="color:purple;">`:boolean`</mark>
 
-```lua
-local colorpicker = ui.create_colorpicker("Checkbox", "checkbox_ref")
-checkbox:disable(true)
-```
+<pre class="language-lua"><code class="lang-lua">local colorpicker = ui.create_colorpicker("Checkbox", "checkbox_ref")
+<strong>checkbox:disable(true)
+</strong></code></pre>
 
 {% tabs %}
 {% tab title="Variation 1" %}
-```lua
-local colorpicker = ui.create_colorpicker("Checkbox", "checkbox_ref")
-local set_bool = colorpicker:disable(true)
-print(set_bool) -- true
-```
+<pre class="language-lua"><code class="lang-lua">local colorpicker = ui.create_colorpicker("Checkbox", "checkbox_ref")
+
+<strong>local set_bool_one = colorpicker:disable(true)
+</strong><strong>local set_bool_two = colorpicker:disable(false)
+</strong>
+print(set_bool_one) -- true
+print(set_bool_two) -- false
+</code></pre>
 {% endtab %}
 
 {% tab title="Variation 2" %}
-```lua
-local colorpicker = ui.create_colorpicker("Checkbox", "checkbox_ref")
-local set_bool = colorpicker:disable(false)
-print(set_bool) -- false
-```
+<pre class="language-lua"><code class="lang-lua">local colorpicker = ui.create_colorpicker("Checkbox", "checkbox_ref")
+<strong>local set_bool = colorpicker:disable(false)
+</strong>print(set_bool) -- false
+</code></pre>
 {% endtab %}
 {% endtabs %}

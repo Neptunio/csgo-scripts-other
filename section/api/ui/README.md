@@ -70,33 +70,30 @@ print(ui.get("reference")) -- checkbox, colorpicker value
 `ui.attach(item: menu_item, attach_item: menu_item)` <mark style="color:purple;">`:boolean`</mark>
 
 <pre class="language-lua"><code class="lang-lua">local group = ui.create(0, "Window", "window_reference")
-<strong>local checkbox = ui.create(1, "Checkbox", "checkbox_ref")
-</strong>ui.attach(group, checkbox)
-</code></pre>
+local checkbox = ui.create(1, "Checkbox", "checkbox_ref")
+<strong>ui.attach(group, checkbox)
+</strong></code></pre>
 
 ### ui.disable
 
 `ui.disable(item: menu_item, state: boolean)` <mark style="color:purple;">`:menu_item`</mark>
 
-```lua
-local group = ui.create(0, "Window", "window_reference")
-group:disable(true)
-```
+<pre class="language-lua"><code class="lang-lua">local group = ui.create(0, "Window", "window_reference")
+<strong>group:disable(true)
+</strong></code></pre>
 
 {% tabs %}
 {% tab title="Variation 1" %}
-```lua
-local group = ui.create(0, "Window", "window_reference")
-local disable_bool = group:disable(true)
-print(disable_bool) -- true
-```
+<pre class="language-lua"><code class="lang-lua">local group = ui.create(0, "Window", "window_reference")
+<strong>local disable_bool = group:disable(true)
+</strong>print(disable_bool) -- true
+</code></pre>
 {% endtab %}
 
 {% tab title="Variation 2" %}
-```lua
-local group = ui.create(0, "Window", "window_reference")
-local disable_bool = group:disable(false)
-print(disable_bool) -- false
-```
+<pre class="language-lua"><code class="lang-lua">local group = ui.create(0, "Window", "window_reference")
+<strong>local disable_bool = group:disable(false)
+</strong>print(disable_bool) -- false
+</code></pre>
 {% endtab %}
 {% endtabs %}
